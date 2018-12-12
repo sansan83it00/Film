@@ -1,0 +1,309 @@
+/* DARK : #17181a; */
+/* GREY LIGHT : #f6f5f5; */
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Google Sans";
+	color: #17181a;
+}
+
+body{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.main-header{
+	width:300px;
+}
+
+.content{
+	height:100%;
+	flex:1;
+}
+
+main{
+	display: flex;
+	flex:1;
+	border-left:2px solid #f6f5f5;
+	box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
+	overflow: hidden;
+	min-height: 100%;
+}
+
+footer{
+	flex:1 100%;
+	text-align: center;
+	background: #0095fd;
+	color: #fff;
+	padding: 40px;
+}
+
+.logo-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:250px;
+}
+
+.logo{
+	width:160px;
+}
+
+nav{
+	border-top:2px solid #f6f5f5;
+}
+
+ul{
+
+}
+
+li{
+	padding:14px 20px;
+	padding-left: 60px;
+	background: #fff;
+	list-style: none;
+
+	border-bottom:1px solid #f6f5f5;
+}
+
+li:hover{
+	background: #f6f5f5;
+	box-shadow: 4px 0px 0px #0095fd inset;
+	cursor: pointer;
+}
+
+/* li.main{
+	text-align: center;
+	padding:14px 0px;
+	color:#cad2d4;
+}
+
+li.title{
+	font-weight:900;
+}
+
+li.sub-title{
+	font-weight:normal;
+	padding-left: 80px;
+	border-bottom:1px solid transparent;
+} */
+
+li.sub-title:last-child{
+	border-bottom:1px solid #eaeef0;
+}
+
+article{
+	flex:1;
+}
+
+
+
+h1{
+	font-size: 42px;
+	font-family: "Times New Roman";
+	font-weight: normal;
+}
+
+h2{
+	font-size: 32px;
+	font-family: "Times New Roman";
+	font-weight: normal;
+}
+
+h3{
+	font-size: 24px;
+	font-family: "Times New Roman";
+	font-weight: normal;
+}
+
+.title-page {
+	border-bottom:1px solid transparent;
+	padding:40px 100px;
+	padding-top:100px;
+}
+
+p{
+
+}
+
+.space{
+	height:20px;
+}
+
+.big-space{
+	height:60px;
+}
+
+section{
+	border-bottom:1px solid #eaeef0;
+	padding:40px 100px;
+	position: relative;
+}
+
+
+
+section img{
+	max-width: 400px;
+	border-radius:15px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+a{
+	color:#01b3ff;
+	text-decoration: none;
+}
+
+
+/* Banniere du film */
+.banniere-film{
+	padding-bottom:60px;
+	height: 250px;
+	border-radius:15px;
+	background: rgba(0,0,0,0.05);
+}
+
+.banniere-container{
+	height:100%;
+	overflow: hidden;
+	border-radius:15px 15px 0px 0px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.banniere-film figcaption{
+	color:#a7b4b9;
+	padding: 20px;
+}
+
+.banniere-film img{
+	width: 100%;
+	position: relative;
+	flex-shrink: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/* Scene du film */
+
+.scenes-container{
+	display:flex;
+  	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.image-scene{
+	padding-bottom:60px;
+	width: calc(50% - 20px);
+	height:250px;
+	border-radius:15px;
+	margin-bottom: 60px;
+}
+
+.content-scene{
+	overflow: hidden;
+	border-radius:15px 15px 0px 0px;
+}
+
+/*.cadre figure{
+	width: 100%;
+}*/
+
+.content-scene img{
+	width: 100%;
+}
+
+.image-scene figcaption{
+	color:#a7b4b9;
+	padding: 20px;
+	background: rgba(0,0,0,0.05);
+	border-radius:0px 0px 15px 15px;
+
+}
+
+/*Realisateur */
+
+.cadre-container{
+	display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.cadre{
+	position: relative;
+    background: #fff;
+    width: 60%;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cadre-container img{
+	width: 100%;
+    object-fit: cover;
+}
+
+p{
+	font-size:16px;
+	line-height: 24px;
+}
+
+
+.font-bleu{
+	color: #0095fd;
+}
+
+.font-gris{
+	color: #8a8a8a;
+}
+
+/* aside */
+
+aside{
+	width:300px;
+	background: #f6f5f5;
+	padding: 40px;
+    padding-top: 100px;
+}
+
+.aside-info{
+	padding-bottom: 40px;
+}
+
+.cadre-container{
+	display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.cadre{
+	position: relative;
+    background: #fff;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.cadre figure{
+	width: 100%;
+}
+
+.cadre-container img{
+	width: 100%;
+    object-fit: cover;
+}
+
+.cadre span {
+	margin-top: 10px;
+}
